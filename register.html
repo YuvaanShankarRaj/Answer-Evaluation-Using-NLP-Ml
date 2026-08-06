@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 15px 0;
+            color: white;
+        }
+
+        .navbar h1 {
+            margin: 5px 0;
+        }
+
+        .nav-links {
+            margin-top: 10px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 30px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 700px;
+            color: white;
+        }
+
+        /* Container */
+        .container {
+            margin-top: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        input,
+        select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 95%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1e7e34;
+        }
+
+        .container p {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>EduAI Platform</h1>
+        <div class="nav-links">
+            <a href="login.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h2>Create Your Account</h2>
+        <p>
+            Join our AI-powered education platform to streamline learning,
+            automate paper evaluation, and enhance academic performance.
+        </p>
+    </div>
+
+    <!-- Register Form -->
+    <div class="container">
+
+        <h2>Register</h2>
+
+        <form action="/register_user" method="POST">
+
+            <input name="username" placeholder="Username" required>
+
+            <input name="password" type="password" placeholder="Password" required>
+
+            <select name="role">
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+            </select>
+
+            <button type="submit" onclick="register()">
+                Register
+                <script>
+                    function register(){
+                        alert("Register successfully");
+                    }
+                </script>
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- About Section -->
+    <div class="hero" id="about">
+        <h2>About EduAI Platform</h2>
+        <p>
+            <ul>
+                <li>Automatic Short Answer Grading (ASAG): Systems, 
+                    often employing NLP, automatically grade short, text-based answers, 
+                    reducing human bias and providing consistent evaluation.</li>
+                <br>
+                <li>Automatic correction of educational content using Machine Learning (ML) 
+                    streamlines grading, provides personalized feedback, and reduces 
+                    teacher workload by identifying and fixing errors in student submissions, 
+                    ranging from writing to numerical problems.</li>
+                <br>
+                <li>These systems, often using Natural Language Processing (NLP) and 
+                    Deep Learning, can assess short-answer questions, detect grammar errors, 
+                    and grade programming exercises, 
+                    enhancing educational outcomes through real-time feedback.</li>
+            </ul> 
+        </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>📞 Phone: <b>9791025376</b></p>
+        <p>📧 Email: support@eduai.com</p>
+        <p>📍 Location: India</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2026 EduAI Platform | Empowering Education with AI</p>
+    </div>
+
+</body>
+
+</html>

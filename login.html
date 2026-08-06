@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Paper Evaluation</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        /* Navbar (now centered vertical feel) */
+        .navbar {
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 15px 0;
+            color: white;
+        }
+
+        .navbar h1 {
+            margin: 5px 0;
+        }
+
+        .nav-links {
+            margin-top: 10px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 30px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 700px;
+            color: white;
+        }
+
+        .hero h2 {
+            margin-bottom: 15px;
+        }
+
+        /* Login Card */
+        .container {
+            margin-top: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 95%;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            width: 100%;
+            text-align: center;
+            background: rgba(0,0,0,0.85);
+            color: white;
+            padding: 15px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>EduAI Platform</h1>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h2>AI-Based Paper Evaluation System</h2>
+    </div>
+
+    <!-- Login -->
+    <div class="container">
+        <h2>Login</h2>
+
+        <form action="/login" method="POST">
+            <input name="username" placeholder="Username" required>
+            <input name="password" type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <p>New here? <a href="/register">Register</a></p>
+    </div>
+
+    <!-- About Section -->
+    <div class="hero" id="about">
+        <h2>About EduAI Platform</h2>
+        <p>
+            A login page securely authenticates users, typically requiring a username/email and password. 
+            Essential components include input fields, a "LOGIN" button, 
+            password recovery links, and optionally, social login options.
+        </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>📞 Phone: <b>9791025376</b></p>
+        <p>📧 Email: support@eduai.com</p>
+        <p>📍 Location: India</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2026 EduAI Platform | Empowering Education with AI</p>
+    </div>
+
+</body>
+
+</html>

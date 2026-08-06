@@ -1,0 +1,6 @@
+flask
+mysql-connector-python
+sentence-transformers
+pandas
+scikit-learn
+torch
